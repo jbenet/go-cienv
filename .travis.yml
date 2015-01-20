@@ -7,6 +7,6 @@ go:
   - tip
 
 script:
-  - make test
+  - go test -race -cpu=5 -v ./...
 
 env: TEST_VERBOSE=1
